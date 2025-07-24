@@ -58,13 +58,14 @@ body{
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
     font-size: 90px;
     color: #9106a1;
+    cursor: pointer;
 }
 #reset
 {
     padding: 1rem;
     font-size: 1.3rem;
     background-color: #191913;
-    /* color: #fff; */
+    cursor: pointer;
     border-radius: 1rem;
     border: none;
     margin-bottom: -56px;
@@ -94,7 +95,7 @@ body{
     height: 100px;
     width: 160px;
     background-color: #191913;
-    /* color: #fff; */
+    cursor: pointer;
     border-radius: 1rem;
     border: none;
     
@@ -164,6 +165,7 @@ body{
     animation: none;
     background-color:#191913;
     color: rgb(0, 208, 255);
+    cursor: pointer;
 }
 #x:hover
 {
@@ -171,8 +173,10 @@ body{
     animation: none;
     background-color:#191913;
     color: rgb(0, 208, 255);
+    cursor: pointer;
 }
 .box:hover
 {
     background-color: #05ce0c;
+    cursor: pointer;
 }
