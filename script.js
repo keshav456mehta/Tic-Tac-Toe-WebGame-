@@ -6,6 +6,7 @@ let msgPara = document.querySelector("#msgP");
 let choiceX = document.querySelector("#x");
 let choiceY = document.querySelector("#o");
 let player = "";
+let moveCount = 0;
 
 let turnO = true;
 const winPatterns = 
@@ -37,6 +38,7 @@ choiceY.addEventListener("click", () =>
 const reset = () => 
 {
     turnO =  true;
+    moveCount = 0;
     enableBoxes();
     msg.classList.add("hide");
 }
@@ -54,6 +56,7 @@ boxes.forEach((box) => {
             turnO = true;
         }
         box.disabled = true;
+        moveCount++;
         checkWinner();
     });
 });
@@ -93,11 +96,16 @@ const checkWinner = () => {
     {
         if(pos1 === pos2 && pos2 === pos3)
         {
-            console.log("Winner",pos1);
             showWinner(pos1);
         }
     }
 }
+    if (moveCount === 9) 
+    {
+        msgPara.innerText = "It's a Draw!";
+        msg.classList.remove("hide");
+        disableBoxes();
+    }
 };
 newBtn.addEventListener("click",reset);
 resetBtn.addEventListener("click",reset);
