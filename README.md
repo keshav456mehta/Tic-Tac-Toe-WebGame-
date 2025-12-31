@@ -6,5 +6,4 @@ This is a browser-based classic Tic Tac Toe game where two players take turns to
 - Win/draw detection  
 - Stylish UI with responsive design  
 
-📌 Play it live here: http://127.0.0.1:5500/index.html
-http://127.0.0.1:5500/index.html
+📌 Play it live here: https://tic-tac-toe-web-game-seven.vercel.app/
